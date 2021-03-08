@@ -1,0 +1,103 @@
+/*James O’Beirne
+M4.254 - Desarrollo front-end con framew. JavaScript aula 2
+PEC1 - Introducción al desarrollo frontend
+07 de Marzo de 2021*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{ /*set the scope of these variables for the entire html document*/
+    --success-color:#53dd31;
+    --error-color: #f06339;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e3e8ec;
+    font-family: "Open Sans", sans-serif;
+    display: flex; /* a common way to horizontally and verically center things*/
+    align-items: center;        /**/
+    justify-content: center;    /**/
+    min-height: 100vh;          /**/
+    margin:0;                   /**/
+} 
+
+.container{
+    background-color: white;
+    border-radius:  15px;
+    box-shadow: 15px 15px 12px rgba(0,0,0,0.2);
+    width: 450px;
+
+}
+
+h2{
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+.form-control{
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    position: relative; /*used to position small tag within this*/
+}
+
+.form-control label{
+    color:#777; 
+    display: block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display:block;
+    width:100%;
+    padding:10px;
+    font-size:14px;
+}
+
+.form-control input:focus{
+    border-color: #777;
+}
+
+.form-control.success input{ /*js adds success class*/
+    border-color: var(--success-color);
+}
+
+.form-control.error input{ /*js adds error class*/
+    border-color: var(--error-color);
+}
+
+.form-control small{
+    color:var(--error-color);
+    position: absolute;
+    bottom:-5px;
+    left:0; 
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+    
+}
+
+.form button{
+    cursor: pointer;
+    background-color: #45c3e9;
+    border: 1px solid #45c3e9;
+    border-radius: 3px;
+    color:white;
+    font-size:16px;
+    display:block;
+    width:100%;
+    padding:10px;
+}
+
+
+
