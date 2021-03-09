@@ -83,7 +83,6 @@ function comparePasswords(input1, input2) {
     }
 }
 
-!1Jjamie
 
 //check that password has number, upper-case, lower-case and a symbol
 function charachtersInPassword(input) {
